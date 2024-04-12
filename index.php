@@ -12,7 +12,7 @@
 
     <!-- title -->
     <header id="site_header">
-        <h1 class="text-center">Non osare dire le parolacce</h1>
+        <h1 class="text-center m-3">Non osare dire le parolacce</h1>
     </header>
 
     <main id="site_main">
@@ -22,18 +22,18 @@
 
                 <!-- text area for the paragraph -->
                 <div class="mb-3">
-                    <label for="paragraph" class="form-label">Paragraph:</label>
-                    <textarea class="form-control" id="paragraph" name="paragraph"></textarea>
+                    <label for="paragraph" class="form-label">Paragrafo:</label>
+                    <textarea class="form-control" id="paragraph" name="paragraph" placeholder="scrivi un testo qui"></textarea>
                 </div>
     
                 <!-- input text for badword -->        
                 <div class="mb-3">
                     <label for="bad-word" class="form-label">Parola da censurare:</label>
-                    <input type="text" class="form-control" id="bad-word" name="bad-word">
+                    <input type="text" class="form-control" id="bad-word" name="bad-word" placeholder="scrivi una parola da censurare">
                 </div>
     
                 <!-- submit btn -->
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Censura!</button>
 
             </form>
         </div>

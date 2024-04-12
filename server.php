@@ -29,40 +29,60 @@ $censoredParagraphWords = explode(" ", $censoredParagraph);
 
     <!-- bs -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
-        <h1>Risultato:</h1>
+        <h1 class="text-center m-3">Risultato:</h1>
     </header>
 
     <main>
         <div class="container">
-            <!-- your text + length -->
-            <div class="your-text">
-                <h2>Il tuo testo:</h2>
-                <p><?php echo $paragraph ?></p>
-                <div class="length">
-                    <strong>Lettere:</strong>
-                    <span><?php echo $paragraphLength ?></span>
-                    <strong>Parole:</strong>
-                    <span><?php echo count($paragraphWords) ?></span>
-                </div>
+            <div class="row gx-3">
 
-                <div class="censored-text">
-                    <h2>Il tuo testo censurato:</h2>
-                    <p><?php echo $censoredParagraph ?></p>
-                    <div class="length">
-                    <strong>Lettere:</strong>
-                    <span><?php echo $censoredParagraphLength ?></span>                    
-                    <strong>Parole:</strong>
-                    <span><?php echo count($censoredParagraphWords) ?></span>                  
+                <!-- your text + length -->
+                <div class="your-text col-6">
+                    <div class="p-3 border border-success rounded">
+                        <h2>Il tuo testo:</h2>
+                        <p><?php echo $paragraph ?></p>
+                        <div class="length d-flex justify-content-between">
+                            <div class="letters">
+                                <strong>Lettere:</strong>
+                                <span><?php echo $paragraphLength ?></span>
+                            </div>
+                            <div class="words">
+                                <strong>Parole:</strong>
+                                <span><?php echo count($paragraphWords) ?></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
+    
+                <!-- censored text + length -->
+                <div class="censored-text col-6">
+                    <div class="p-3 border border-danger rounded">
+                        <h2>Il tuo testo censurato:</h2>
+                        <p><?php echo $censoredParagraph ?></p>
+                        <div class="length d-flex justify-content-between">
+                            <div class="letters">
+                                <strong>Lettere:</strong>
+                                <span><?php echo $censoredParagraphLength ?></span>
+                            </div>
+                            <div class="words">
+                                <strong>Parole:</strong>
+                                <span><?php echo count($censoredParagraphWords) ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                
+
             </div>
-        </div>
 
+        </div>        
+        
     </main>
-
+    
 
 
     <!-- script bs -->
