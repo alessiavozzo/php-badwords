@@ -11,6 +11,11 @@ $censoredParagraph = str_replace($badWord, "***", $paragraph);
 $paragraphLength = strlen($paragraph);
 $censoredParagraphLength = strlen($censoredParagraph);
 
+//words
+$paragraphWords = explode(" ", $paragraph);
+$censoredParagraphWords = explode(" ", $censoredParagraph);
+//var_dump($paragraphWords);
+//var_dump(count($paragraphWords));
 
 
 ?>
@@ -39,6 +44,8 @@ $censoredParagraphLength = strlen($censoredParagraph);
                 <div class="length">
                     <strong>Lettere:</strong>
                     <span><?php echo $paragraphLength ?></span>
+                    <strong>Parole:</strong>
+                    <span><?php echo count($paragraphWords) ?></span>
                 </div>
 
                 <div class="censored-text">
@@ -46,7 +53,9 @@ $censoredParagraphLength = strlen($censoredParagraph);
                     <p><?php echo $censoredParagraph ?></p>
                     <div class="length">
                     <strong>Lettere:</strong>
-                    <span><?php echo $censoredParagraphLength ?></span>
+                    <span><?php echo $censoredParagraphLength ?></span>                    
+                    <strong>Parole:</strong>
+                    <span><?php echo count($censoredParagraphWords) ?></span>                  
                 </div>
                 </div>
             </div>
