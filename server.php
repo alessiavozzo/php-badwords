@@ -1,8 +1,8 @@
 <?php 
 
 //badword + paragraph
-$badWord = $_GET["bad-word"];
-$paragraph = $_GET["paragraph"];
+$badWord = $_POST["bad-word"];
+$paragraph = $_POST["paragraph"];
 //var_dump($badWord, $paragraph);
 
 $censoredParagraph = str_replace($badWord, "***", $paragraph);

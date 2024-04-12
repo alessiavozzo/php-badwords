@@ -18,7 +18,7 @@
     <main id="site_main">
         <div class="container">
             <!-- form -->
-            <form action="./server.php" method="get"> 
+            <form action="./server.php" method="post"> 
 
                 <!-- text area for the paragraph -->
                 <div class="mb-3">
