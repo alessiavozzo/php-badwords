@@ -19,17 +19,17 @@
         <div class="container">
             <!-- form -->
             <form action="./server.php" method="get"> 
-                   
+
                 <!-- text area for the paragraph -->
                 <div class="mb-3">
                     <label for="paragraph" class="form-label">Paragraph:</label>
-                    <textarea class="form-control" id="paragraph"></textarea>
+                    <textarea class="form-control" id="paragraph" name="paragraph"></textarea>
                 </div>
     
                 <!-- input text for badword -->        
                 <div class="mb-3">
                     <label for="bad-word" class="form-label">Parola da censurare:</label>
-                    <input type="text" class="form-control" id="bad-word">
+                    <input type="text" class="form-control" id="bad-word" name="bad-word">
                 </div>
     
                 <!-- submit btn -->
